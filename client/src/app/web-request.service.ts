@@ -8,7 +8,7 @@ export class WebRequestService {
   readonly ROOT_URL;
 
   constructor(private http: HttpClient) {
-    this.ROOT_URL = '/';
+    this.ROOT_URL = 'https://sarajevotravel.herokuapp.com/';
   }
 
   get(uri: string) {
