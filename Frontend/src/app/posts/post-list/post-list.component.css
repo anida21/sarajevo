@@ -1,0 +1,95 @@
+:host {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+mat-card {
+  margin: 25px;
+}
+
+.comments {
+  margin: 15px, 0px;
+  padding: 0px;
+}
+
+.comment-card {
+  margin: 5px;
+  padding: 0px;
+  background-color: #fff5f8;
+}
+
+button:focus {
+  outline: none;
+  border: 0;
+}
+
+.example-card {
+  max-width: 400px;
+  min-width: 310px;
+  display: block;
+  align-self: center;
+  position: center;
+}
+
+.example-header-image {
+  background-image: url("/assets/person.png");
+  background-size: cover;
+}
+
+mat-card-header {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+mat-card-title {
+  margin: 0 auto;
+  width: max-content;
+  white-space: nowrap;
+}
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 0;
+}
+
+.mat-card {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto;
+  align-items: center;
+}
+
+example-card {
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+.info {
+  text-align: center;
+}
+
+
+
+#neki{
+  white-space: nowrap;
+  vertical-align: middle;
+  margin-top: 17px;
+
+
+}

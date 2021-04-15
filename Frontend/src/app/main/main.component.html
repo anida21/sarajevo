@@ -1,0 +1,42 @@
+<div class="container">
+  <mat-toolbar color="warn" *ngIf="isLoggedIn">
+    <span class="logoo">
+      <a routerLink="/" ><mat-icon id="neka">camera</mat-icon> Sarajevogram</a>
+    </span>
+    <span class="spacer"></span>
+    <ul>
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a routerLink="/profile">Profile</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a routerLink="/about-us">About Us</a>
+      </li>
+    </ul>
+    <ul id="logout_icon">
+      <li>
+        <button
+          mat-mini-fab
+          color="warn"
+          >
+          <a class="pointer" (click)="onLogout()"><mat-icon>logout</mat-icon></a>
+        </button> 
+      </li>
+    </ul>
+    <ul id="add_photo">
+      <button
+            mat-mini-fab
+            color="warn"
+            routerLink="/create"
+          >
+        <mat-icon>add_a_photo</mat-icon>
+      </button>
+    </ul>
+  </mat-toolbar>
+</div>
