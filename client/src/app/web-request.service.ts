@@ -8,7 +8,7 @@ export class WebRequestService {
   readonly ROOT_URL;
 
   constructor(private http: HttpClient) {
-    this.ROOT_URL = 'https://protected-anchorage-95318.herokuapp.com/';
+    this.ROOT_URL = '';
   }
 
   get(uri: string) {
