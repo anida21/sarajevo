@@ -30,6 +30,8 @@ app.use("/images", express.static(path.join("backend/images")));
 // CORS HEADERS MIDDLEWARE
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Credentials", true);
+
   res.header(
     "Access-Control-Allow-Methods",
     "GET, POST, HEAD, OPTIONS, PUT, PATCH, DELETE"
