@@ -10,31 +10,31 @@ export class WebRequestService {
 
   constructor(private http: HttpClient) {
     
-    this.ROOT_URL = 'http://localhost:3000';
-    this.PRODUCTION_URL  = "https://sarajevotravel.herokuapp.com/";
+    this.ROOT_URL = '';
+    
   }
 
   get(uri: string) {
-    return this.http.get(`${this.PRODUCTION_URL}/${uri}`);
+    return this.http.get(`${this.ROOT_URL}/${uri}`);
   }
 
   post(uri: string, payload: Object) {
-    const res = this.http.post(`${this.PRODUCTION_URL}/${uri}`, payload);
+    const res = this.http.post(`${this.ROOT_URL}/${uri}`, payload);
     console.log(res);
     return res; //this.http.post(`${this.ROOT_URL}/${uri}`, payload);
   }
 
   patch(uri: string, payload: Object) {
-    return this.http.patch(`${this.PRODUCTION_URL}/${uri}`, payload);
+    return this.http.patch(`${this.ROOT_URL}/${uri}`, payload);
   }
 
   delete(uri: string) {
-    return this.http.delete(`${this.PRODUCTION_URL}/${uri}`);
+    return this.http.delete(`${this.ROOT_URL}/${uri}`);
   }
 
   login(email: string, password: string) {
     return this.http.post(
-      `${this.PRODUCTION_URL}/api/users/login`,
+      `${this.ROOT_URL}/api/users/login`,
       {
         email,
         password,
@@ -47,7 +47,7 @@ export class WebRequestService {
 
   signup(email: string, password: string, username: string) {
     return this.http.post(
-      `${this.PRODUCTION_URL}/api/users`,
+      `${this.ROOT_URL}/api/users`,
       {
         email,
         password,
