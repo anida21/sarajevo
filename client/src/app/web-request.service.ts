@@ -10,7 +10,7 @@ export class WebRequestService {
 
   constructor(private http: HttpClient) {
     
-    this.ROOT_URL = 'https://sarajevotravel.herokuapp.com/';
+    this.ROOT_URL = '';
     
   }
 
