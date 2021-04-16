@@ -8,7 +8,7 @@ export class WebRequestService {
   readonly ROOT_URL;
 
   constructor(private http: HttpClient) {
-    this.ROOT_URL = 'process.env.PORT';
+    this.ROOT_URL = '/';
   }
 
   get(uri: string) {
