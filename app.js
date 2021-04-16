@@ -12,6 +12,10 @@ const { Post } = require("./db/models/post.model");
 const usersRoutes = require("./routes/users");
 const postsRoutes = require("./routes/posts");
 const path = require("path");
+
+//const production = "https://sarajevotravel.herokuapp.com/";
+//const development = 'http://localhost:3000/';
+//const url = (process.env.NODE_ENV ? production : development);
 if(process.env.NODE_ENV === 'production'){
   //Set static folder
   app.use(express.static('./client/dist'));
