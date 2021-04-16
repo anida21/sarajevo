@@ -55,8 +55,8 @@ app.use(function (req, res, next) {
 
 /* END MIDDLEWARE  */
 
-app.use("/users", usersRoutes);
-app.use("/posts", postsRoutes);
+app.use("/api/users", usersRoutes);
+app.use("/api/posts", postsRoutes);
 
 module.exports = app;
 
