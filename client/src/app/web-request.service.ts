@@ -10,7 +10,7 @@ export class WebRequestService {
 
   constructor(private http: HttpClient) {
     
-    this.ROOT_URL = 'htttp://localhost:4200';
+    this.ROOT_URL = '';
     
   }
 
