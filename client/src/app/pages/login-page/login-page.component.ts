@@ -28,7 +28,7 @@ export class LoginPageComponent implements OnInit {
       .subscribe((res: HttpResponse<any>) => {
         if (res.status === 200) {
           // we have logged in successfully
-          this.router.navigate(['https://sarajevotravel.herokuapp.com/']);
+          this.router.navigate(['/']);
         }
         console.log(res);
       });
