@@ -10,7 +10,7 @@ export class WebRequestService {
 
   constructor(private http: HttpClient) {
     
-    this.ROOT_URL = 'https://sarajevotravel.herokuapp.com/';
+    this.ROOT_URL = '';
     
   }
 
@@ -34,7 +34,7 @@ export class WebRequestService {
 
   login(email: string, password: string) {
     return this.http.post(
-      `https://sarajevotravel.herokuapp.com/api/users/login`,
+      `${this.ROOT_URL}/api/users/login`,
       {
         email,
         password,
