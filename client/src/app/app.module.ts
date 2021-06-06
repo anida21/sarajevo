@@ -24,7 +24,6 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
 import { WebReqInterceptorService } from './web-req-interceptor.service';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +35,7 @@ import { WebReqInterceptorService } from './web-req-interceptor.service';
     SignupPageComponent,
     AboutUsComponent,
     ProfilePageComponent,
+    
   ],
   imports: [
     BrowserModule,

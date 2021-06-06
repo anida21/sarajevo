@@ -80,9 +80,10 @@ mat-card-title {
 }
 
 img {
-  max-width: 400px;
-  min-width: 200px;
-  height: 350px;
+  max-width: 500px;
+  min-width: 100px;
+  width: 360px;
+  height: 310px;
   background-repeat: no-repeat;
   background-size: auto;
 }

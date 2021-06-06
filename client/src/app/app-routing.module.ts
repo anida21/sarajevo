@@ -30,6 +30,7 @@ const routes: Routes = [
     path: 'about-us',
     component: AboutUsComponent,
   },
+ 
 
   { path: 'login', component: LoginPageComponent },
   { path: 'signup', component: SignupPageComponent },

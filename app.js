@@ -27,7 +27,8 @@ if(process.env.NODE_ENV === 'production'){
 
 /* MIDDLEWARE  */
 
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
+app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/images", express.static(path.join("backend/images")));
 
@@ -54,6 +55,10 @@ app.use(function (req, res, next) {
 });
 
 /* END MIDDLEWARE  */
+app.get('/ruta', (req,res)=>{
+  console.log('1')
+  res.send('Hi')
+})
 
 app.use("/api/users", usersRoutes);
 app.use("/api/posts", postsRoutes);
